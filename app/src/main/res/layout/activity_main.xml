@@ -5,15 +5,78 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E6C2C2"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/titleTextView"
+        android:layout_width="295dp"
+        android:layout_height="72dp"
+        android:fontFamily="@font/allan"
         android:text="Hello World!"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083"
+        tools:text="FoodForYou" />
+
+    <TextView
+        android:id="@+id/displayTextView"
+        android:layout_width="340dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#0D0D0D"
+        app:layout_constraintBottom_toTopOf="@+id/calculateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextView" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="116dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayTextView" />
+
+    <EditText
+        android:id="@+id/editTextView"
+        android:layout_width="243dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="53dp"
+        android:hint="Enter meal type of day"
+        app:layout_constraintBottom_toTopOf="@+id/displayTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="92dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
