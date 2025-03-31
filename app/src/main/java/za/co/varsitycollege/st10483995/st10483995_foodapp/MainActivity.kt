@@ -25,32 +25,38 @@ class MainActivity : AppCompatActivity() {
             insets
 
         }
-        //commands for the calculate button
-        calculateButton.setOnClickListener {
-            displayTextView.text = displayText
-            //popup text after button is clicked
-        }
-        //command for the reset button
-        resetButton.setOnClickListener {
-            editTextView.text.clear()
-        }
-    }
     //declarations for the UI components
     val editTextView = findViewById<EditText>(R.id.editTextView)
     val displayTextView = findViewById<TextView>(R.id.displayTextView)
     val calculateButton = findViewById<Button>(R.id.calculateButton)
     val resetButton = findViewById<Button>(R.id.resetButton)
 
-    //information and commands for the display text view
-    val displayText: String
-        get() = when (editTextView.text.toString()) {
-       "morning" -> "Eggs on Toast"
-        "midmorning snack" -> "Yoghurt"
-       "lunch" -> "Cheeseburger"
-        "afternoon Snack" -> "Mixed Nuts"
-        "dinner" -> "Steak and Mashed Potatoes"
-        "evening snack" -> "Chocolate Chip Cookies"
-        else -> "Invalid entry"
+
+
+
+    //commands for the calculate button
+        calculateButton.setOnClickListener {
+            val str = editTextView.text.toString()
+            displayTextView.text = str
+            val input = displayTextView.text.toString()
+            when (input) {
+                "morning" -> displayTextView.text = "Eggs on Toast"
+                "midmorning snack" -> displayTextView.text = "Yoghurt"
+                "lunch" -> displayTextView.text = "Cheeseburger"
+                "afternoon Snack" -> displayTextView.text = "Mixed Nuts"
+                "dinner" -> displayTextView.text = "Steak and Mashed Potatoes"
+                "evening snack" -> displayTextView.text = "Chocolate Chip Cookies"
+                else -> "Invalid entry"
+            }
+//            displayTextView.text = editTextView.text.toString()
+
+        }
+        //command for the reset button
+        resetButton.setOnClickListener {
+            editTextView.text.clear()
+        }
     }
+
+
 
 }
