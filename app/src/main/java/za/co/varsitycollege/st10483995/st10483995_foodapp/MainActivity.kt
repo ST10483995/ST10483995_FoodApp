@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -46,14 +47,17 @@ class MainActivity : AppCompatActivity() {
                 "afternoon Snack" -> displayTextView.text = "Mixed Nuts"
                 "dinner" -> displayTextView.text = "Steak and Mashed Potatoes"
                 "evening snack" -> displayTextView.text = "Chocolate Chip Cookies"
-                else -> "Invalid entry"
+                else -> displayTextView.text = "Invalid entry, enter eg. morning"
             }
-//            displayTextView.text = editTextView.text.toString()
+//            comment for clicked button
+         Toast.makeText(this,
+         "Food Time!", Toast.LENGTH_LONG).show()
 
         }
-        //command for the reset button
+        //commands for the reset button
         resetButton.setOnClickListener {
             editTextView.text.clear()
+            displayTextView.text = ""
         }
     }
 
