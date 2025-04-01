@@ -30,7 +30,7 @@ To install the app open Android Studio:
 
 ## 🔗 Links
 
-GitHub Profile: https://github.com/ST10483995
+GitHub Profile: https://github.com/VCCT-IMAD5112-2025-G1/ST10483995_FoodApp
 App Repository1: https://github.com/ST10483995/ST10483995_FoodApp
 
 ## Features
