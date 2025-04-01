@@ -39,6 +39,14 @@ App Repository1: https://github.com/ST10483995/ST10483995_FoodApp
 - Reset Button
 - Fullscreen Mode
 - Time of Day Entry
-- Suggested Meal Section 
+- Suggested Meal Section
+
+## FAQ
+
+•	Why won’t the app generate the meal?
+o	The entry is likely wrong.
+•	Why does it only suggest one option?
+o	The app likely hasn’t been updated with added suggestions.
+
 
 ding README.md…]()
