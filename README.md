@@ -32,6 +32,8 @@ To install the app open Android Studio:
 
 GitHub Profile: https://github.com/VCCT-IMAD5112-2025-G1/ST10483995_FoodApp
 App Repository1: https://github.com/ST10483995/ST10483995_FoodApp
+Report: [FoodForYou Report2.pdf](https://github.com/user-attachments/files/19566713/FoodForYou.Report2.pdf)
+
 
 ## Features
 
